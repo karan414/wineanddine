@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <!-- content header line -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgContentTop"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/content_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u20B9 25"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <!-- content header image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/cell_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_image" />
+    </RelativeLayout>
+
+
+    <!-- content body layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgContent"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="9dp">
+
+        <!-- dish name part -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/content_dish_title"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:text="Dish Name" />
+
+            <TextView
+                android:id="@+id/content_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_dish_title"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="Dish Name"
+                android:textColor="@color/mainTextColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="5dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- dish description part -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/content_dish_description"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:text="Dish Description" />
+
+            <TextView
+                android:id="@+id/content_dish_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_dish_description"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="Dish Name"
+                android:textColor="@color/mainTextColor"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <!--Quantity Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <TextView
+                android:textColor="#a9a9a9"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Quantity"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"/>
+
+            <pl.polak.clicknumberpicker.ClickNumberPickerView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="8"
+                android:id="@+id/quantity"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                app:decimal_number="0"
+                app:integer_priority="true"
+                app:picker_corner_radius="40"
+                app:pickers_background_color="#CFD8DC"
+                app:step="1"
+                app:min_value="1"
+                app:swipe_animation="false"
+                app:swipe_enabled="false"
+                app:value_animation_down="true"
+                app:left_picker_layout="@layout/left_picker_view"
+                app:right_picker_layout="@layout/right_picker_view"
+                app:value_animation_up="true"
+                app:value_background_color="#ECEFF1"
+                app:value_text_color="@android:color/black"
+                app:value_view_offset="0"/>
+        </LinearLayout>
+
+        <!-- cart button -->
+        <TextView
+            android:id="@+id/add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edge"
+            android:padding="10dp"
+            android:text="Add to Cart"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textColor="@color/mainTextColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

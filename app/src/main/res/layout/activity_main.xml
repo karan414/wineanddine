@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="false"
+    android:layoutMode="opticalBounds"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.example.karan.winedine.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:src="@drawable/logo_client" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.50"
+            android:drawableLeft="@drawable/phone"
+            android:fontFamily="roboto"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_edge"
+            android:fontFamily="cursive"
+            android:text="Let's  Go"
+            android:textAllCaps="false"
+            android:textColor="@color/grey900"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

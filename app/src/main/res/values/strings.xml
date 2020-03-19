@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wine and Dine</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="map_api_key">AIzaSyBs1o7XasI-fx9Y5_Kr4C2ONVcjsqn0oFk</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.winedine.wineanddinekitchen.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="2">
+
+    <FrameLayout
+        android:id="@+id/maincont"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.75"></FrameLayout>
+
+    <Button
+        android:id="@+id/call_a_waiter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:background="@drawable/rounded_edge"
+        android:text="Call A Waiter"
+        android:textSize="24sp"
+        android:textAllCaps="false" />
+
+</LinearLayout>

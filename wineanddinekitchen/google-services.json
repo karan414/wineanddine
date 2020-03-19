@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "596704522422",
+    "firebase_url": "https://wine-and-dine.firebaseio.com",
+    "project_id": "wine-and-dine",
+    "storage_bucket": "wine-and-dine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596704522422:android:2db6faa6b153a26951f617",
+        "android_client_info": {
+          "package_name": "com.example.karan.winedine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596704522422-65pv7j87lsd0l111lesbd3qi6ivkge13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karan.winedine",
+            "certificate_hash": "56c34091b4081cf726534f34fb7846db9145c515"
+          }
+        },
+        {
+          "client_id": "596704522422-terolb3u0nunr039e0l4djf8deo42ns6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnO8Q-X8jsZECwyHS09BIIJuxnNxwxQAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596704522422-terolb3u0nunr039e0l4djf8deo42ns6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596704522422:android:dc7275d15620290c51f617",
+        "android_client_info": {
+          "package_name": "com.example.wineanddineadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596704522422-eid05bsoroc3cja4tvafdp6svgrpfg6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wineanddineadmin",
+            "certificate_hash": "56c34091b4081cf726534f34fb7846db9145c515"
+          }
+        },
+        {
+          "client_id": "596704522422-terolb3u0nunr039e0l4djf8deo42ns6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnO8Q-X8jsZECwyHS09BIIJuxnNxwxQAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596704522422-terolb3u0nunr039e0l4djf8deo42ns6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596704522422:android:0c9f41a9e9d6ca0c51f617",
+        "android_client_info": {
+          "package_name": "com.example.winedine.wineanddinekitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596704522422-iu8ilhs5do82u7hsfnfg0dd2l2airhe8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.winedine.wineanddinekitchen",
+            "certificate_hash": "56c34091b4081cf726534f34fb7846db9145c515"
+          }
+        },
+        {
+          "client_id": "596704522422-terolb3u0nunr039e0l4djf8deo42ns6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnO8Q-X8jsZECwyHS09BIIJuxnNxwxQAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596704522422-terolb3u0nunr039e0l4djf8deo42ns6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

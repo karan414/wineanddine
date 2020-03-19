@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:layoutMode="opticalBounds"
+    android:paddingBottom="10dp"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.example.wineanddineadmin.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:textAlignment="gravity"
+        android:weightSum="13">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:fontFamily="cursive"
+            android:text="Register Yourself"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_person"
+            android:fontFamily="roboto"
+            android:hint="Enter Name"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_mail"
+            android:fontFamily="roboto"
+            android:hint="Enter email address"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_lock"
+            android:fontFamily="roboto"
+            android:hint="Enter Password"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:fontFamily="roboto"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/phone"
+            android:fontFamily="roboto"
+            android:layout_marginTop="5dp"
+            android:hint="Enter contact number"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_address"
+            android:ems="10"
+            android:fontFamily="roboto"
+            android:hint="Enter address"
+            android:layout_marginTop="5dp"
+            android:inputType="textPostalAddress"
+            android:maxLines="3"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_salary"
+            android:fontFamily="roboto"
+            android:hint="Enter salary"
+            android:layout_marginTop="5dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1.3"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edge"
+                android:fontFamily="roboto"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/grey900"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edge"
+                android:fontFamily="roboto"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="@color/grey900"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signnin"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="roboto"
+            android:layout_marginTop="15dp"
+            android:text="Already user, Sign in"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

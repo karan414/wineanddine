@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karan.winedine.empty_cart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_cart"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="-10dp"
+            android:text="NO ITEM IN FOOD CART"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="-20dp"
+            android:text="Add items you want to eat"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/empty_cart_add_item"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginTop="-5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edge"
+            android:text="Add a Item"
+            android:textSize="16sp"
+            android:fontFamily=""
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</FrameLayout>

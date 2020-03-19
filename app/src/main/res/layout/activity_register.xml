@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluegrey50"
+    android:fillViewport="false"
+    android:layoutMode="opticalBounds"
+    android:paddingBottom="10dp"
+    android:paddingTop="40dp"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context="com.example.karan.winedine.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="gravity"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:text="Register Yourself"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_person"
+            android:fontFamily="roboto"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/phone"
+            android:focusable="false"
+            android:fontFamily="roboto"
+            android:hint="Enter contact number"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/mail"
+            android:fontFamily="roboto"
+            android:hint="Enter email address (optional)"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edge"
+                android:fontFamily="cursive"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/grey900"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edge"
+                android:fontFamily="cursive"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="@color/grey900"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

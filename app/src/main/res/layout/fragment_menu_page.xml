@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karan.winedine.MenuPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/top_menu"
+                android:layout_width="wrap_content"
+                android:background="#E0E0E0"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="#E0E0E0"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</FrameLayout>

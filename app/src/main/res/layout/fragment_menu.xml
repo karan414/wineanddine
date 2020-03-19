@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karan.winedine.MenuFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1">
+            <ss.com.bannerslider.views.BannerSlider
+                android:id="@+id/banner_slider1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:animateIndicators="true"
+                app:defaultIndicators="circle"
+                app:interval="5000"
+                app:indicatorSize="5dp"
+                app:loopSlides="true"
+                app:emptyView="@layout/layout_empty_view"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.9">
+            <FrameLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="#f48fb1"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <com.loopeer.cardstack.CardStackView
+                    android:id="@+id/stackview_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:clipToPadding="false"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="0dp"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

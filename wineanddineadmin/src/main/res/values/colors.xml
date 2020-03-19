@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A237E</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey700">#616161</color>
+    <color name="grey900">#212121</color>
+    <color name="pink500">#E91E62</color>
+    <color name="bluegrey50">#ECEFF1</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="half_black">#808080</color>
+    <color name="black_semi_transparent">#FFFFFF</color>
+</resources>
